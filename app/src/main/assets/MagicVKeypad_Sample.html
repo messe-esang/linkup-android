@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MagicVKeypad_Sample</title>
+
+    <script type="text/javascript" src="./MagicVKeypad.js"></script>
+    <script type="text/javascript" language="javascript">
+        var option = "";
+
+
+        function Init()
+        {
+            var url = location.href.split("?");
+            var data = url[1].split("=");
+            var key = data[0];
+
+            if (key == "option")
+            option = decodeURI(data[1]);
+            console.log(option);
+        }
+    </script>
+
+    <style>
+        h2 { text-align: center; }
+    </style>
+</head>
+<body onload="Init()">
+<form name='MagicVKeypad_Sample' method="POST" action="android.dream">
+    <p>
+        <strong><h2>Hybrid Mode</h2></strong>
+    </p>
+
+    <p>
+    <h4>문자 키패드 HALF 모드</h4>
+    </p>
+
+    <input type='text' name='input_char_keypad2' readonly="readonly"
+           id='input_char_keypad2'
+           onfocus="callMagicVKeypad(this, VIEW_MODE.HALF_TYPE, KEYPAD_TYPE.CHAR_TYPE, option);"/>
+    <input type='hidden' name='enc_input_char_keypad2'
+           id='enc_input_char_keypad2' />
+
+    <p>
+    <h4>숫자 키패드 HALF 모드</h4>
+    </p>
+    <input type='text' name='input_num_keypad2' readonly="readonly"
+           id='input_num_keypad2'
+           onfocus="callMagicVKeypad(this, VIEW_MODE.HALF_TYPE, KEYPAD_TYPE.NUM_TYPE, option)"/>
+    <input type='hidden' name='enc_input_num_keypad2'
+           id='enc_input_num_keypad2' />
+
+
+    <p>
+    <h4>문자 키패드 FULL 모드</h4>
+    </p>
+
+    <input type='text' name='input_char_keypad1' readonly="readonly"
+           id='input_char_keypad1'
+           onfocus="callMagicVKeypad(this, VIEW_MODE.FULL_TYPE, KEYPAD_TYPE.CHAR_TYPE, option);"/>
+    <input type="hidden" name='enc_input_char_keypad1'
+           id='enc_input_char_keypad1' />
+
+    <p>
+    <h4>숫자 키패드 FULL 모드</h4>
+    </p>
+
+    <input  style="margin-bottom: 100px" type='text' name='input_num_keypad1' readonly="readonly"
+            id='input_num_keypad1'
+            onfocus="callMagicVKeypad(this, VIEW_MODE.FULL_TYPE, KEYPAD_TYPE.NUM_TYPE, option);"/>
+    <input type='hidden' name='enc_input_num_keypad1'
+           id='enc_input_num_keypad1' />
+
+</form>
+</body>

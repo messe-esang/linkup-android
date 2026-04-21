@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btAddQRCertificate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_skyblue_rounded"
+            android:text="QR CODE로\n인증서 가져오기"
+            android:textColor="#3f3f3f"
+            android:textSize="13dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btAddNumberCertificate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_skyblue_rounded"
+            android:text="인증번호로\n인증서 가져오기"
+            android:textColor="#3f3f3f"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvNoCertificate"
+            style="@style/TEXT_CONTENT_CENTER"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="저장된 인증서가 없습니다." />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCertificate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btAddTestCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_skyblue_rounded"
+        android:text="테스트 인증서 가져오기"
+        android:textColor="#3f3f3f" />
+
+    <LinearLayout
+        android:id="@+id/vgSelectAndDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btSelectCertificate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_red_rounded"
+            android:text="선택" />
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btDeleteCertificate"
+            style="@style/BUTTON_MAIN_SELECTOR"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="삭제" />
+    </LinearLayout>
+</LinearLayout>

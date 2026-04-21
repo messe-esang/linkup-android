@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1039099668090",
+    "project_id": "link-up-4d98d",
+    "storage_bucket": "link-up-4d98d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039099668090:android:b323b52f3bcb42e2947dc3",
+        "android_client_info": {
+          "package_name": "net.esang.linkup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB5AXKerC08Y6dQK19m6RkGV1eVB5AseM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039099668090:android:5593adc17c32d40c947dc3",
+        "android_client_info": {
+          "package_name": "net.esang.mlinkup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB5AXKerC08Y6dQK19m6RkGV1eVB5AseM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

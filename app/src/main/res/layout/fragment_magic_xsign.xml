@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/xsign_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvVersion"
+                style="@style/TEXT_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/noSelectedCertificate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보유하신 인증서가 없습니다."
+                android:textColor="@color/color_3F3F3F"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_1"
+                android:layout_marginTop="18dp"
+                android:text="사업자용 공동인증서를 모바일로 복사한 후\n다시 시도하여 주시기 바랍니다."
+                android:textColor="@color/color_3F3F3F"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_2"
+                android:layout_marginTop="8dp"
+                android:text="만료된 인증서는 인식이 불가합니다."
+                android:textColor="#FF0000"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btAddNumberCertificate"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/bt_skyblue_rounded"
+                android:text="인증서 가져오기"
+                android:textColor="#3F3F3F"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/btn_add_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="사업자용 공동인증서 서명"
+                        android:textColor="@color/color_3F3F3F"
+                        android:textSize="20dp"
+                        android:textStyle="normal" />
+
+                    <ImageButton
+                        android:id="@+id/btn_poppup"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/ic_info" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="사업자용 공동인증서 선택 바랍니다."
+                    android:textColor="@color/color_primary"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btAddQRCertificate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:text="QR CODE로\n인증서 가져오기"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/btAddNumberCertificate"-->
+                <!--                    style="@style/BUTTON_MAIN_SELECTOR"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="4dp"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:text="인증번호로\n인증서 가져오기"-->
+                <!--                    android:textSize="13dp"-->
+                <!--                    android:visibility="gone" />-->
+            </LinearLayout>
+
+            <!--        <Space-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="4dp" />-->
+
+            <!--            <include-->
+            <!--                android:id="@+id/noSelectedCertificate"-->
+            <!--                layout="@layout/item_no_select_certificate"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="5dp"-->
+            <!--                android:layout_marginEnd="5dp"-->
+            <!--                android:visibility="gone" />-->
+
+            <include
+                android:id="@+id/selectedCertificate"
+                layout="@layout/item_select_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/rec_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_select_layout"
+                android:layout_below="@+id/btn_add_layout"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1">
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/tvNoCertificate"-->
+                <!--                style="@style/TEXT_CONTENT_CENTER"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:text="저장된 인증서가 없습니다." />-->
+                <!--                <include-->
+                <!--                    android:id="@+id/tvNoCertificate"-->
+                <!--                    layout="@layout/item_no_select_certificate"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    android:layout_marginStart="5dp"-->
+                <!--                    android:layout_marginEnd="5dp" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCertificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/dimView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80BDBDBD"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/rvCertificate"
+                    app:layout_constraintEnd_toEndOf="@id/rvCertificate"
+                    app:layout_constraintStart_toStartOf="@id/rvCertificate"
+                    app:layout_constraintTop_toTopOf="@id/rvCertificate" />
+            </FrameLayout>
+
+            <!--        <Space-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="4dp" />-->
+
+
+            <LinearLayout
+                android:id="@+id/btn_select_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_skyblue_rounded"
+                    android:text="인증서 선택"
+                    android:textColor="#3F3F3F"
+                    android:visibility="gone" />
+
+
+                <!--        <Space-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="4dp" />-->
+
+                <TextView
+                    android:id="@+id/title_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_select_layout"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:text="⦿ 인증서 암호입력"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <!--        <Space-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="4dp" />-->
+
+                <LinearLayout
+                    android:id="@+id/password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_txt"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="비밀번호"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_edit_text"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btDoFunction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password_layout"
+
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="인증서 전자서명하기"
+                    android:visibility="gone" />
+
+                <!--        <Space-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="4dp" />-->
+
+                <!--        <RelativeLayout-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="match_parent"-->
+                <!--            android:layout_marginStart="5dp"-->
+                <!--            android:layout_marginEnd="5dp"-->
+                <!--            android:background="@color/white">-->
+
+                <!--            <ScrollView-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:layout_above="@+id/btn_send_result">-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/btn_send_result"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/vr"
+                        layout="@layout/view_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="4dp" />
+
+                    <include
+                        android:id="@+id/vrVerifySign"
+                        layout="@layout/view_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <!--            </ScrollView>-->
+
+                <Button
+                    android:id="@+id/btn_send_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btDoFunction"
+                    android:layout_alignParentBottom="false"
+                    android:text="서버전송"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/ds_keypad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

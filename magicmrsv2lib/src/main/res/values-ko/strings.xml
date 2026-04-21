@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="magicmrs_export_cert_title">인증서 내보내기</string>
+    <string name="magicmrs_export_cert_content">인증서를 가져올 PC 혹은 단말기에\n인증번호를 입력하시거나 QR코드를 스캔해주세요.</string>
+    <string name="magicmrs_export_cert_time_left">남은시간&#160;&#160;</string>
+    <string name="magicmrs_export_cert_timer_format">%02d : %02d</string>
+
+    <string name="magicmrs_import_qrcode_title">QR코드 스캔</string>
+    <string name="magicmrs_import_qrcode_content">①  PC화면에서 해당 사이트에 접속하세요.\n②  인증서 내보내기를 클릭하세요.\n③  내보낼 인증서를 선택하세요.\n④  PC에서 생성된 QR코드를 폰에 입력하세요.</string>
+    <string name="magicmrs_import_qrcode_auth_btn">인증번호로 가져오기</string>
+
+    <string name="magicmrs_import_authcode_title">인증번호 입력</string>
+    <string name="magicmrs_import_authcode_prompt">를 입력하세요.</string>
+    <string name="magicmrs_import_authcode_content">①  PC화면에서 해당 사이트에 접속하세요.\n②  인증서 내보내기를 클릭하세요.\n③  내보낼 인증서를 선택하세요.\n④  PC에서 생성된 인증번호를 폰에 입력하세요.</string>
+    <string name="magicmrs_import_authcode_btn">인증서 가져오기</string>
+    <string name="magicmrs_import_authcode_not_match_1_dialog">인증번호가 올바르지 않습니다.\n다시 입력해 주세요.(남은 횟수 : &#160;</string>
+    <string name="magicmrs_import_authcode_not_match_2_dialog">/5회 남음)</string>
+    <string name="magicmrs_import_authcode_retryover_dialog">인증번호 입력 횟수를 초과하여 이 창을 종료합니다.\n인증서 가져오기를 재시도 하시기 바랍니다.</string>
+    <string name="magicmrs_import_authcode_not_inserted_authcode_dialog">인증번호 8자리를 입력하지 않으셨습니다.</string>
+
+    <string name="magicmrs_authcode">인증번호</string>
+    <string name="magicmrs_qrcode">QR 코드</string>
+    <string name="magicmrs_yes">예</string>
+    <string name="magicmrs_no">아니오</string>
+    <string name="magicmrs_ok">확인</string>
+
+    <string name="magicmrs_e_desc_success">성공</string>
+    <string name="magicmrs_e_desc_user_cancel">사용자 취소</string>
+    <string name="magicmrs_e_desc_pwd_null">인증서 비밀번호 미입력</string>
+    <string name="magicmrs_e_desc_qr_scan_fail">QR Code 인식 실패</string>
+    <string name="magicmrs_e_desc_session_timeout">MagicMRS 서버 타임아웃</string>
+    <string name="magicmrs_e_desc_cert_not_exist">인증서 존재하지 않음</string>
+    <string name="magicmrs_e_desc_server_cert_verify_fail">서버 인증서 검증 실패</string>
+    <string name="magicmrs_e_desc_retryover_authcode">인증번호 불일치 횟수 초과</string>
+    <string name="magicmrs_e_desc_wrong_pwd">인증서 비밀번호 불일치</string>
+    <string name="magicmrs_e_desc_not_match_keypair">인증서와 개인키 키쌍 불일치</string>
+    <string name="magicmrs_e_desc_authcode_not_match">인증번호 불일치</string>
+    <string name="magicmrs_e_desc_crypto_fail">암복호화 실패</string>
+    <string name="magicmrs_e_desc_not_inserted_qr_data">QR Code 데이터 미입력</string>
+    <string name="magicmrs_e_desc_not_inserted_authcode">인증번호 미입력</string>
+    <string name="magicmrs_e_desc_expired_qrcode">만료된 QR Code 스캔</string>
+    <string name="magicmrs_e_desc_camera_permission_denied">카메라 권한 거절됨</string>
+    <string name="magicmrs_e_desc_invalid_certificate">유효하지 않은 인증서</string>
+    <string name="magicmrs_e_desc_url_init_fail">Protocol 또는 URL 미입력</string>
+    <string name="magicmrs_e_desc_ssl_cert_verify_fail">SSL 인증서 검증 실패</string>
+    <string name="magicmrs_e_desc_invalid_license">라이선스 검증 실패</string>
+    <string name="magicmrs_e_desc_network_error">네트워크 에러</string>
+    <string name="magicmrs_e_desc_server_error">MagicMRS 서버 에러</string>
+
+    <string name="magicmrs_e_desc_dependency_setting_error">의존성 미설정 에러</string>
+
+</resources>

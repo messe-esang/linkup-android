@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application>
+        <activity
+            android:name="com.dreamsecurity.magicvkeypad.DSFullModeActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+    </application>
+</manifest>

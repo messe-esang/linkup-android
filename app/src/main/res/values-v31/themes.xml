@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.Linkup_android" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:statusBarColor">@color/color_F9F9F9</item>
+        <item name="android:navigationBarColor">@color/color_F9F9F9</item>
+        <item name="android:windowSplashScreenBackground">@color/color_F9F9F9</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="snackbarStyle">@style/Snackbar.Margin.0dp</item>
+    </style>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="almost_white">#fdfdfd</color>
+    <color name="seperate_line_grey">#dfdfdf</color>
+    <color name="light_grey">#efefef</color>
+    <color name="translucent_white">#88ffffff</color>
+    <color name="dark_grey">#333333</color>
+    <color name="black">#000000</color>
+    <color name="tangerine_orange">#f58309</color>
+    <color name="neon_green">#19CD00</color>
+    <color name="bright_blue">#1672e4</color>
+    <color name="vivid_blue">#1972e4</color>
+</resources>

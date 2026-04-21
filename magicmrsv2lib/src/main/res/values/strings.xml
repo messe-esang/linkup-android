@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="magicmrs_export_cert_title">Export Certificate</string>
+    <string name="magicmrs_export_cert_content">Please enter the authentication code or scan the QR code on the PC or device you are importing the certificate to.</string>
+    <string name="magicmrs_export_cert_time_left">Time remaining&#160;&#160;</string>
+    <string name="magicmrs_export_cert_timer_format">%02d : %02d</string>
+
+    <string name="magicmrs_import_qrcode_title">Scan QR Code</string>
+    <string name="magicmrs_import_qrcode_content">① Access the website from your PC screen.\n② Click on Export Certificate.\n③ Select the certificate you want to export.\n④ Enter the QR code generated on your PC into your phone.</string>
+    <string name="magicmrs_import_qrcode_auth_btn">Import by Authentication Code</string>
+
+    <string name="magicmrs_import_authcode_title">Enter Authentication Code</string>
+    <string name="magicmrs_import_authcode_prompt">:&#160; Please enter it below.</string>
+    <string name="magicmrs_import_authcode_content">① Access the website from your PC screen.\n② Click on Export Certificate.\n③ Select the certificate you want to export.\n④ Enter the authentication code generated on your PC into your phone.</string>
+    <string name="magicmrs_import_authcode_btn">Import Certificate</string>
+    <string name="magicmrs_import_authcode_not_match_1_dialog">The authentication code is incorrect.\nPlease try again.(Remaining attempts: &#160;</string>
+    <string name="magicmrs_import_authcode_not_match_2_dialog">/5 attempts left)</string>
+    <string name="magicmrs_import_authcode_retryover_dialog">You have exceeded the number of attempts to enter the authentication code.\nPlease try to import the certificate again.</string>
+    <string name="magicmrs_import_authcode_not_inserted_authcode_dialog">You did not enter the 8-digit authentication code.</string>
+
+    <string name="magicmrs_authcode">Authentication Code</string>
+    <string name="magicmrs_qrcode">QR Code</string>
+    <string name="magicmrs_yes">Yes</string>
+    <string name="magicmrs_no">No</string>
+    <string name="magicmrs_ok">OK</string>
+
+    <string name="magicmrs_e_desc_success">Success</string>
+    <string name="magicmrs_e_desc_user_cancel">User canceled</string>
+    <string name="magicmrs_e_desc_pwd_null">No certificate password entered</string>
+    <string name="magicmrs_e_desc_qr_scan_fail">Failed to recognize QR code</string>
+    <string name="magicmrs_e_desc_session_timeout">MagicMRS Server timeout</string>
+    <string name="magicmrs_e_desc_cert_not_exist">No certificate exists</string>
+    <string name="magicmrs_e_desc_server_cert_verify_fail">Failed to verify server certificate</string>
+    <string name="magicmrs_e_desc_retryover_authcode">Exceeded the number of incorrect authentication code attempts</string>
+    <string name="magicmrs_e_desc_wrong_pwd">Incorrect certificate password</string>
+    <string name="magicmrs_e_desc_not_match_keypair">Certificate and private key do not match</string>
+    <string name="magicmrs_e_desc_authcode_not_match">Authentication code does not match</string>
+    <string name="magicmrs_e_desc_crypto_fail">Encryption/Decryption failure</string>
+    <string name="magicmrs_e_desc_not_inserted_qr_data">No QR code data entered</string>
+    <string name="magicmrs_e_desc_not_inserted_authcode">No authentication code entered</string>
+    <string name="magicmrs_e_desc_expired_qrcode">Scanned an expired QR code</string>
+    <string name="magicmrs_e_desc_camera_permission_denied">Camera permission denied</string>
+    <string name="magicmrs_e_desc_invalid_certificate">Invalid certificate</string>
+    <string name="magicmrs_e_desc_url_init_fail">Protocol or URL not entered</string>
+    <string name="magicmrs_e_desc_ssl_cert_verify_fail">Failed to verify SSL certificate</string>
+    <string name="magicmrs_e_desc_network_error">Network error</string>
+    <string name="magicmrs_e_desc_server_error">MagicMRS server error</string>
+    <string name="magicmrs_e_desc_invalid_license">License verification failed.</string>
+    <string name="magicmrs_e_desc_dependency_setting_error">MagicMRS Dependency setting error was occured</string>
+</resources>

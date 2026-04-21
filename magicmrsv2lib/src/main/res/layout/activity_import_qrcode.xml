@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/almost_white"
+    tools:context="com.dreamsecurity.magicmrs.activity.MagicMRSImportQRCodeActivity">
+
+    <RelativeLayout
+        android:id="@+id/import_qrcode_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/vivid_blue">
+
+        <Button
+            android:id="@+id/import_qrcode_back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/import_qrcode_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/magicmrs_import_qrcode_title"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/import_qrcode_auth_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@color/bright_blue"
+        android:gravity="center"
+        android:text="@string/magicmrs_import_qrcode_auth_btn"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/import_qrcode_camera_pv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_above="@+id/import_qrcode_auth_btn"
+        android:layout_below="@+id/import_qrcode_title_rl"
+        />
+
+    <LinearLayout
+        android:id="@+id/import_qrcode_message_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/import_qrcode_title_rl"
+        android:background="@color/translucent_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/import_qrcode_message_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/magicmrs_import_qrcode_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

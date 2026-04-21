@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/almost_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/export_cert_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/vivid_blue">
+
+        <Button
+            android:id="@+id/export_backbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/export_cert_title"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/magicmrs_export_cert_title"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/export_cert_message"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/export_cert_title_layout"
+        android:gravity="center"
+        android:text="@string/magicmrs_export_cert_content"
+        android:textColor="@color/dark_grey"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/export_cert_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/export_cert_message"
+        android:background="@color/seperate_line_grey" />
+
+    <LinearLayout
+        android:id="@+id/export_cert_sessiontime_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@color/light_grey"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/export_cert_sessiontime_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/magicmrs_export_cert_time_left"
+            android:textColor="@color/dark_grey"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/export_cert_sessiontime_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textColor="@color/tangerine_orange"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/export_cert_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/export_cert_sessiontime_layout"
+        android:layout_below="@+id/export_cert_line"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/square_blue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/export_cert_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/vivid_blue"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/magicmrs_authcode"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/authcode_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square_white"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/authcode_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square_white"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/magicmrs_qrcode"
+            android:textColor="@color/dark_grey"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/export_cert_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/magicmrs_qrcode"
+            android:scaleType="fitCenter"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Link UP</string>
+
+    <!-- notification -->
+    <string name="notification_channel_id">notification_channel_id_normal01</string>
+    <string name="notification_channel_name">일반</string>
+    <string name="notification_channel_description"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
