@@ -55,7 +55,7 @@ public class TelKit {
     public static final String PATH_DOMAIN_LIST = "/api/common/getAppAllowDomainList";
 
     public static String[] DOWN_DOMAIN_LIST = null;
-    public static final String[] DOMAIN_LIST = {"mlinkupdev.e-sang.net", "mlinkup.e-sang.net", "bit.ly", "mobile-ok.com", "scert.mobile-ok.com"};
+    public static final String[] DOMAIN_LIST = {"mlinkupdev.e-sang.net", "mlinkup.e-sang.net", "bit.ly", "mobile-ok.com", "scert.mobile-ok.com", "cert.mobile-ok.com"};
 
     private final ExecutorService executorService = Executors.newSingleThreadExecutor();
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
